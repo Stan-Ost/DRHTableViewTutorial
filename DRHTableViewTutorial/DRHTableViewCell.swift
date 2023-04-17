@@ -9,7 +9,6 @@
 import UIKit
 
 class DRHTableViewCell: UITableViewCell {
-    
     class var identifier: String { return String(describing: self) }
     class var nib: UINib { return UINib(nibName: identifier, bundle: nil) }
 
@@ -18,11 +17,6 @@ class DRHTableViewCell: UITableViewCell {
     @IBOutlet weak var postDateLabel: UILabel?
     @IBOutlet weak var titleLabel: UILabel?
     @IBOutlet weak var previewLabel: UILabel?
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
- 
-    }
     
     func configureWithItem(item: DRHTableViewDataModelItem) {
         // this method will not be created or used in this example project
